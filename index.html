@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta n ame="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Никита (NikiZip) — программист. Разработка на C++, Rust и Python: системный код, сетевые сервисы, REST API, парсеры и автоматизация. Помогаю одногруппникам с учёбой.">
+  <meta name="author" content="Nikita / NikiZip">
+  <meta property="og:title" content="NikiZip — программист. Разработка на C++ / Rust / Python">
+  <meta property="og:description" content="Системный код, сетевые сервисы, REST API, парсеры и автоматизация. Беру задачи под ключ.">
+  <meta property="og:type" content="website">
+  <title>NikiZip — программист. Разработка на C++ / Rust / Python</title>
+  <link rel="icon" href="assets/avatar.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo">
+      <span class="nav__logo-mark">N</span>
+      <span class="nav__logo-text">NikiZip.dev</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Основная навигация">
+      <a href="#services">Услуги</a>
+      <a href="#study">Учёба</a>
+      <a href="#work">Работы</a>
+      <a href="#process">Как работаю</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a class="btn btn--primary btn--sm" href="https://t.me/NikiZ1p" target="_blank" rel="noopener">Написать</a>
+      <button class="nav__burger" id="navBurger" type="button" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <p class="hero__eyebrow reveal">// программист · c++ · rust · python</p>
+        <h1 class="hero__title reveal">
+          Здравствуйте, я <span class="accent">Никита</span>.<br />
+          Пишу код, который работает.
+        </h1>
+        <p class="hero__lead reveal">
+          Разрабатываю системный и сетевой код на <strong>C++</strong> и <strong>Rust</strong>,
+          делаю REST API, парсеры и автоматизацию на <strong>Python</strong>.
+          Беру задачи под ключ: от обсуждения ТЗ до рабочего результата с тестами.
+          А ещё помогаю одногруппникам с учёбой.
+        </p>
+
+        <div class="hero__meta reveal">
+          <span class="chip"><span class="dot"></span>Беру новые задачи</span>
+          <span class="chip">🎓 IT TOP COLLEGE</span>
+          <span class="chip">Сочи · удалённо</span>
+          <span class="chip">RU · EN</span>
+        </div>
+
+        <div class="hero__cta reveal">
+          <a class="btn btn--primary" href="https://t.me/NikiZ1p" target="_blank" rel="noopener">Обсудить задачу</a>
+          <a class="btn" href="#services">Смотреть услуги</a>
+          <a class="btn" href="#study">Помощь с учёбой</a>
+          <a class="btn" href="https://github.com/nikitu0008-collab" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <h2 class="section__title reveal"><span class="section__num">01.</span> Услуги</h2>
+        <p class="section__lead reveal">
+          Ниже — что я делаю чаще всего. Если вашей задачи в списке нет, напишите: скорее всего, я справлюсь.
+        </p>
+
+        <div class="services">
+          <article class="service reveal">
+            <span class="service__icon">⚙️</span>
+            <h3 class="service__title">Системный код на C++</h3>
+            <p class="service__desc">
+              Утилиты, работа с памятью, многопоточность, терминальные программы на ncurses.
+            </p>
+            <ul class="service__list">
+              <li>CMake-сборка, C++20/23</li>
+              <li>Многопоточность и синхронизация</li>
+              <li>Работа с файлами и процессами</li>
+            </ul>
+            <p class="service__price">от <strong>199 ₽</strong></p>
+          </article>
+
+          <article class="service reveal">
+            <span class="service__icon">💬</span>
+            <h3 class="service__title">Сетевые сервисы</h3>
+            <p class="service__desc">
+              TCP/WebSocket-серверы и клиенты, обмен сообщениями, broadcast между клиентами.
+            </p>
+            <ul class="service__list">
+              <li>Boost.Beast / сокеты</li>
+              <li>Свой протокол или поверх HTTP</li>
+              <li>Нагрузочная проверка</li>
+            </ul>
+            <p class="service__price">от <strong>499 ₽</strong></p>
+          </article>
+
+          <article class="service reveal">
+            <span class="service__icon">🔌</span>
+            <h3 class="service__title">REST API на Python</h3>
+            <p class="service__desc">
+              Backend на FastAPI: эндпоинты, валидация, база данных, тесты и Docker-упаковка.
+            </p>
+            <ul class="service__list">
+              <li>FastAPI + SQLite / PostgreSQL</li>
+              <li>Pydantic-валидация</li>
+              <li>pytest + Docker</li>
+            </ul>
+            <p class="service__price">от <strong>299 ₽</strong></p>
+          </article>
+
+          <article class="service reveal">
+            <span class="service__icon">🕷️</span>
+            <h3 class="service__title">Парсеры и автоматизация</h3>
+            <p class="service__desc">
+              Сбор данных с сайтов, регулярные выгрузки, скрипты, которые делают рутину за вас.
+            </p>
+            <ul class="service__list">
+              <li>Парсинг HTML / JSON / API</li>
+              <li>Выгрузка в CSV, JSON, Excel</li>
+              <li>Запуск по расписанию</li>
+            </ul>
+            <p class="service__price">от <strong>249 ₽</strong></p>
+          </article>
+
+          <article class="service reveal">
+            <span class="service__icon">📊</span>
+            <h3 class="service__title">CLI-инструменты на Rust</h3>
+            <p class="service__desc">
+              Быстрые консольные утилиты: разбор логов, статистика, фильтры, экспорт.
+            </p>
+            <ul class="service__list">
+              <li>Один бинарник, без зависимостей</li>
+              <li>Разные форматы вывода</li>
+              <li>Бенчмарки на criterion</li>
+            </ul>
+            <p class="service__price">от <strong>149 ₽</strong></p>
+          </article>
+
+          <article class="service reveal">
+            <span class="service__icon">🐳</span>
+            <h3 class="service__title">Упаковка и деплой</h3>
+            <p class="service__desc">
+              Соберу и упакую проект, чтобы он запускался одной командой на вашей машине или сервере.
+            </p>
+            <ul class="service__list">
+              <li>Docker / docker-compose</li>
+              <li>Git + CI на GitHub Actions</li>
+              <li>Инструкция по запуску</li>
+            </ul>
+            <p class="service__price">от <strong>499 ₽</strong></p>
+          </article>
+        </div>
+
+        <p class="note reveal">
+          Точную цену называю после обсуждения задачи — она зависит от объёма и срока.
+        </p>
+      </div>
+    </section>
+
+    <!-- STUDY -->
+    <section class="section" id="study">
+      <div class="container">
+        <h2 class="section__title reveal"><span class="section__num">02.</span> Помогаю с учёбой</h2>
+        <p class="section__lead reveal">
+          Учусь в IT TOP COLLEGE и помогаю одногруппникам: разбираем лабы, объясняю темы,
+          смотрим вместе, почему не компилируется и куда смотреть в документации.
+          По-дружески и бесплатно — своим. Просто напишите в личку.
+        </p>
+
+        <div class="subjects">
+          <article class="subject reveal">
+            <span class="subject__icon">⚡</span>
+            <h3 class="subject__title">C++</h3>
+            <p class="subject__desc">Указатели, ссылки, ООП, шаблоны, STL и разбор ошибок компиляции на лабах.</p>
+          </article>
+
+          <article class="subject reveal">
+            <span class="subject__icon">🟨</span>
+            <h3 class="subject__title">JavaScript</h3>
+            <p class="subject__desc">DOM, события, fetch, промисы, async/await — с примерами и практикой.</p>
+          </article>
+
+          <article class="subject reveal">
+            <span class="subject__icon">☕</span>
+            <h3 class="subject__title">Java</h3>
+            <p class="subject__desc">Синтаксис, ООП, коллекции, исключения. Помогу с типовыми задачами.</p>
+          </article>
+
+          <article class="subject reveal">
+            <span class="subject__icon">🐍</span>
+            <h3 class="subject__title">Python</h3>
+            <p class="subject__desc">Основы, работа с файлами, requests, разбор задач и структура проекта.</p>
+          </article>
+
+          <article class="subject reveal">
+            <span class="subject__icon">🦀</span>
+            <h3 class="subject__title">Rust</h3>
+            <p class="subject__desc">Владение, borrow checker, cargo. Разбираем, почему не собирается, и как исправить.</p>
+          </article>
+
+          <article class="subject reveal">
+            <span class="subject__icon">🐙</span>
+            <h3 class="subject__title">Git / GitHub</h3>
+            <p class="subject__desc">Коммиты, ветки, merge, PR, разрешение конфликтов. Помогу поднять репозиторий.</p>
+          </article>
+
+          <article class="subject reveal">
+            <span class="subject__icon">🗄️</span>
+            <h3 class="subject__title">SQL</h3>
+            <p class="subject__desc">SELECT, JOIN, GROUP BY, нормализация. Разберём запрос по шагам.</p>
+          </article>
+
+          <article class="subject reveal">
+            <span class="subject__icon">🗣️</span>
+            <h3 class="subject__title">English</h3>
+            <p class="subject__desc">Технический английский: читаем документацию, разбираем тексты ошибок.</p>
+          </article>
+        </div>
+
+        <p class="note reveal">
+          Стучитесь в <a href="https://t.me/NikiZ1p" target="_blank" rel="noopener">Telegram</a> — договоримся и разберёмся вместе.
+        </p>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="container">
+        <h2 class="section__title reveal"><span class="section__num">03.</span> Работы</h2>
+        <p class="section__lead reveal">Несколько проектов, которые можно открыть и потрогать прямо сейчас.</p>
+
+        <div class="work">
+          <a class="card reveal" href="https://github.com/nikitu0008-collab/prompt-forge" target="_blank" rel="noopener">
+            <div class="card__head"><span class="card__icon">✨</span><span class="card__lang">AI</span></div>
+            <h3 class="card__title">Prompt Forge</h3>
+            <p class="card__desc">Генератор структурированных промптов: из описания задачи собирает роль, контекст, требования, формат ответа и критерии готовности в одно готовое ТЗ для ИИ.</p>
+            <span class="card__link">Открыть →</span>
+          </a>
+
+          <a class="card reveal" href="https://github.com/nikitu0008-collab/Messenger-From-C-Boost-Beast" target="_blank" rel="noopener">
+            <div class="card__head"><span class="card__icon">💬</span><span class="card__lang">C++</span></div>
+            <h3 class="card__title">Messenger на Boost.Beast</h3>
+            <p class="card__desc">Чат-сервер на C++23: WebSocket, отдельный поток на клиента, broadcast под мьютексом, встроенный веб-клиент.</p>
+            <span class="card__link">Открыть →</span>
+          </a>
+
+          <a class="card reveal" href="https://github.com/nikitu0008-collab/students-api" target="_blank" rel="noopener">
+            <div class="card__head"><span class="card__icon">🔌</span><span class="card__lang">Python</span></div>
+            <h3 class="card__title">students-api</h3>
+            <p class="card__desc">REST API на FastAPI и SQLite: фильтры, агрегаты, валидация на Pydantic, 10 pytest-тестов, Docker.</p>
+            <span class="card__link">Открыть →</span>
+          </a>
+
+          <a class="card reveal" href="https://github.com/nikitu0008-collab/log-analyzer" target="_blank" rel="noopener">
+            <div class="card__head"><span class="card__icon">📊</span><span class="card__lang">Rust</span></div>
+            <h3 class="card__title">log-analyzer</h3>
+            <p class="card__desc">CLI для разбора Nginx и JSON-логов: фильтры по уровню, IP и времени, статистика, вывод в таблицу, JSON и CSV.</p>
+            <span class="card__link">Открыть →</span>
+          </a>
+        </div>
+
+        <p class="note reveal">
+          Больше проектов и исходников — на <a href="https://github.com/nikitu0008-collab" target="_blank" rel="noopener">GitHub</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+      <div class="container">
+        <h2 class="section__title reveal"><span class="section__num">04.</span> Как работаю</h2>
+
+        <ol class="process">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <h3 class="step__title">Обсуждение</h3>
+            <p class="step__desc">Разбираемся, что нужно получить в итоге. Задаю вопросы, пока картина не станет ясной.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <h3 class="step__title">Оценка</h3>
+            <p class="step__desc">Описываю, что сделаю, за какой срок и сколько это будет стоить. Без сюрпризов в конце.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <h3 class="step__title">Работа</h3>
+            <p class="step__desc">Пишу код и держу в курсе по ходу дела. Промежуточный результат можно посмотреть до сдачи.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">04</span>
+            <h3 class="step__title">Сдача</h3>
+            <p class="step__desc">Отдаю проект с инструкцией по запуску. Если что-то не так — правлю и объясняю, где искать.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container container--narrow">
+        <h2 class="section__title reveal"><span class="section__num">05.</span> Контакты</h2>
+        <p class="section__lead reveal">
+          Расскажите о задаче в двух-трёх предложениях — отвечу быстро и скажу, возьмусь ли и на каких условиях.
+        </p>
+
+        <div class="contact__list reveal">
+          <a class="contact__item" href="https://t.me/NikiZ1p" target="_blank" rel="noopener">
+            <span class="contact__key">Telegram</span>
+            <span class="contact__val">@NikiZ1p</span>
+          </a>
+          <a class="contact__item" href="mailto:nikitu0008@gmail.com">
+            <span class="contact__key">Email</span>
+            <span class="contact__val">nikitu0008@gmail.com</span>
+          </a>
+          <a class="contact__item" href="https://github.com/nikitu0008-collab" target="_blank" rel="noopener">
+            <span class="contact__key">GitHub</span>
+            <span class="contact__val">nikitu0008-collab</span>
+          </a>
+          <a class="contact__item" href="https://nikitu0008-collab.github.io/" target="_blank" rel="noopener">
+            <span class="contact__key">Портфолио</span>
+            <span class="contact__val">nikitu0008-collab.github.io</span>
+          </a>
+        </div>
+
+        <a class="btn btn--primary btn--big reveal" href="https://t.me/NikiZ1p" target="_blank" rel="noopener">
+          Написать в Telegram
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> NikiZip · программист C++ / Rust / Python</p>
+      <p class="footer__copy">HTML / CSS / JS без фреймворков</p>
+    </div>
+
+    <!-- ПАСХАЛКА -->
+    <div class="container footer__secret-wrap">
+      <button class="secret-btn" id="secretBtn" type="button" aria-expanded="false" aria-controls="secretPanel">
+        🤫 здесь спрятан секрет
+      </button>
+      <div class="secret" id="secretPanel" hidden>
+        <p class="secret__title">🥚 Пасхалка найдена!</p>
+        <p class="secret__text">
+          За секретным — в личку:
+          <a href="https://t.me/NikiZ1p" target="_blank" rel="noopener">@NikiZ1p</a>.
+          Только никому 🤫
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
