@@ -2,370 +2,277 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta n ame="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Никита (NikiZip) — программист. Разработка на C++, Rust и Python: системный код, сетевые сервисы, REST API, парсеры и автоматизация. Помогаю одногруппникам с учёбой.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NikiZip — разработка сайтов, Telegram-ботов, REST API, Python-скриптов и приложений на C++ и Rust.">
   <meta name="author" content="Nikita / NikiZip">
-  <meta property="og:title" content="NikiZip — программист. Разработка на C++ / Rust / Python">
-  <meta property="og:description" content="Системный код, сетевые сервисы, REST API, парсеры и автоматизация. Беру задачи под ключ.">
+  <meta name="theme-color" content="#0a0a0f">
+  <meta property="og:title" content="NikiZip — магазин IT-услуг">
+  <meta property="og:description" content="Frontend, Backend, Telegram-боты, Python, C++ и Rust. Выберите услугу и отправьте заявку.">
   <meta property="og:type" content="website">
-  <title>NikiZip — программист. Разработка на C++ / Rust / Python</title>
+  <title>NikiZip — магазин IT-услуг</title>
   <link rel="icon" href="assets/avatar.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="bg-glow" aria-hidden="true"></div>
 
   <header class="nav" id="nav">
-    <a href="#top" class="nav__logo">
-      <span class="nav__logo-mark">N</span>
-      <span class="nav__logo-text">NikiZip.dev</span>
+    <a href="#top" class="nav__logo" aria-label="NikiZip — на главную">
+      <span class="nav__logo-mark">N</span><span class="nav__logo-text">NikiZip.dev</span>
     </a>
-
-    <nav class="nav__links" aria-label="Основная навигация">
-      <a href="#services">Услуги</a>
-      <a href="#study">Учёба</a>
-      <a href="#work">Работы</a>
-      <a href="#process">Как работаю</a>
-      <a href="#contact">Контакты</a>
+    <nav class="nav__links" id="navLinks" aria-label="Основная навигация">
+      <a href="#services">Услуги</a><a href="#about">Обо мне</a><a href="#work">Работы</a>
+      <a href="#process">Как работаю</a><a href="#faq">FAQ</a><a href="#contact">Контакты</a>
     </nav>
-
     <div class="nav__actions">
-      <a class="btn btn--primary btn--sm" href="https://t.me/NikiZ1p" target="_blank" rel="noopener">Написать</a>
-      <button class="nav__burger" id="navBurger" type="button" aria-label="Меню" aria-expanded="false">
+      <a class="btn btn--primary btn--sm" href="#order">Заказать</a>
+      <button class="nav__burger" id="navBurger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
   <main id="top">
-    <!-- HERO -->
     <section class="hero">
-      <div class="container">
-        <p class="hero__eyebrow reveal">// программист · c++ · rust · python</p>
-        <h1 class="hero__title reveal">
-          Здравствуйте, я <span class="accent">Никита</span>.<br />
-          Пишу код, который работает.
-        </h1>
-        <p class="hero__lead reveal">
-          Разрабатываю системный и сетевой код на <strong>C++</strong> и <strong>Rust</strong>,
-          делаю REST API, парсеры и автоматизацию на <strong>Python</strong>.
-          Беру задачи под ключ: от обсуждения ТЗ до рабочего результата с тестами.
-          А ещё помогаю одногруппникам с учёбой.
-        </p>
-
-        <div class="hero__meta reveal">
-          <span class="chip"><span class="dot"></span>Беру новые задачи</span>
-          <span class="chip">🎓 IT TOP COLLEGE</span>
-          <span class="chip">Сочи · удалённо</span>
-          <span class="chip">RU · EN</span>
+      <div class="container hero__grid">
+        <div>
+          <p class="hero__eyebrow reveal">// NIKIZIP.DEV · РАЗРАБОТКА И АВТОМАТИЗАЦИЯ</p>
+          <h1 class="hero__title reveal">Ваши идеи.<br><span class="accent">Мой код.</span><br>Рабочий результат.</h1>
+          <p class="hero__lead reveal">Разрабатываю сайты, Telegram-ботов, REST API и программы на Python, C++ и Rust. Помогу пройти путь от идеи и технического задания до готового проекта.</p>
+          <div class="hero__meta reveal">
+            <span class="chip"><span class="dot"></span>Открыт к новым задачам</span>
+            <span class="chip">💻 IT TOP COLLEGE</span><span class="chip">Удалённо</span>
+          </div>
+          <div class="hero__cta reveal">
+            <a class="btn btn--primary" href="#services">Выбрать услугу <span>→</span></a>
+            <a class="btn" href="https://t.me/NikiZ1p" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+          </div>
+          <p class="hero__hint reveal">Не нашли нужную услугу? <a href="#order">Опишите задачу</a> — обсудим индивидуальный вариант.</p>
         </div>
-
-        <div class="hero__cta reveal">
-          <a class="btn btn--primary" href="https://t.me/NikiZ1p" target="_blank" rel="noopener">Обсудить задачу</a>
-          <a class="btn" href="#services">Смотреть услуги</a>
-          <a class="btn" href="#study">Помощь с учёбой</a>
-          <a class="btn" href="https://github.com/nikitu0008-collab" target="_blank" rel="noopener">GitHub</a>
-        </div>
+        <aside class="hero-card reveal" aria-label="Информация о разработчике">
+          <div class="terminal__top"><span></span><span></span><span></span><small>nikizip — developer</small></div>
+          <div class="terminal">
+            <p><span class="code-purple">const</span> developer = {</p>
+            <p class="indent">name: <span class="code-green">"Nikita"</span>,</p>
+            <p class="indent">alias: <span class="code-green">"NikiZip"</span>,</p>
+            <p class="indent">stack: [<span class="code-green">"Python"</span>, <span class="code-green">"C++"</span>, <span class="code-green">"Rust"</span>],</p>
+            <p class="indent">focus: <span class="code-green">"Web & Backend"</span>,</p>
+            <p class="indent">status: <span class="code-green">"available"</span></p>
+            <p>};</p>
+            <div class="terminal__bottom"><span class="terminal__pulse"></span> Ready to build something useful<span class="cursor">_</span></div>
+          </div>
+          <div class="hero-card__stats"><div><strong>06+</strong><span>направлений</span></div><div><strong>24/7</strong><span>приём заявок</span></div><div><strong>1:1</strong><span>общение</span></div></div>
+        </aside>
       </div>
     </section>
 
-    <!-- SERVICES -->
     <section class="section" id="services">
       <div class="container">
-        <h2 class="section__title reveal"><span class="section__num">01.</span> Услуги</h2>
-        <p class="section__lead reveal">
-          Ниже — что я делаю чаще всего. Если вашей задачи в списке нет, напишите: скорее всего, я справлюсь.
-        </p>
-
-        <div class="services">
-          <article class="service reveal">
-            <span class="service__icon">⚙️</span>
-            <h3 class="service__title">Системный код на C++</h3>
-            <p class="service__desc">
-              Утилиты, работа с памятью, многопоточность, терминальные программы на ncurses.
-            </p>
-            <ul class="service__list">
-              <li>CMake-сборка, C++20/23</li>
-              <li>Многопоточность и синхронизация</li>
-              <li>Работа с файлами и процессами</li>
-            </ul>
-            <p class="service__price">от <strong>199 ₽</strong></p>
-          </article>
-
-          <article class="service reveal">
-            <span class="service__icon">💬</span>
-            <h3 class="service__title">Сетевые сервисы</h3>
-            <p class="service__desc">
-              TCP/WebSocket-серверы и клиенты, обмен сообщениями, broadcast между клиентами.
-            </p>
-            <ul class="service__list">
-              <li>Boost.Beast / сокеты</li>
-              <li>Свой протокол или поверх HTTP</li>
-              <li>Нагрузочная проверка</li>
-            </ul>
-            <p class="service__price">от <strong>499 ₽</strong></p>
-          </article>
-
-          <article class="service reveal">
-            <span class="service__icon">🔌</span>
-            <h3 class="service__title">REST API на Python</h3>
-            <p class="service__desc">
-              Backend на FastAPI: эндпоинты, валидация, база данных, тесты и Docker-упаковка.
-            </p>
-            <ul class="service__list">
-              <li>FastAPI + SQLite / PostgreSQL</li>
-              <li>Pydantic-валидация</li>
-              <li>pytest + Docker</li>
-            </ul>
-            <p class="service__price">от <strong>299 ₽</strong></p>
-          </article>
-
-          <article class="service reveal">
-            <span class="service__icon">🕷️</span>
-            <h3 class="service__title">Парсеры и автоматизация</h3>
-            <p class="service__desc">
-              Сбор данных с сайтов, регулярные выгрузки, скрипты, которые делают рутину за вас.
-            </p>
-            <ul class="service__list">
-              <li>Парсинг HTML / JSON / API</li>
-              <li>Выгрузка в CSV, JSON, Excel</li>
-              <li>Запуск по расписанию</li>
-            </ul>
-            <p class="service__price">от <strong>249 ₽</strong></p>
-          </article>
-
-          <article class="service reveal">
-            <span class="service__icon">📊</span>
-            <h3 class="service__title">CLI-инструменты на Rust</h3>
-            <p class="service__desc">
-              Быстрые консольные утилиты: разбор логов, статистика, фильтры, экспорт.
-            </p>
-            <ul class="service__list">
-              <li>Один бинарник, без зависимостей</li>
-              <li>Разные форматы вывода</li>
-              <li>Бенчмарки на criterion</li>
-            </ul>
-            <p class="service__price">от <strong>149 ₽</strong></p>
-          </article>
-
-          <article class="service reveal">
-            <span class="service__icon">🐳</span>
-            <h3 class="service__title">Упаковка и деплой</h3>
-            <p class="service__desc">
-              Соберу и упакую проект, чтобы он запускался одной командой на вашей машине или сервере.
-            </p>
-            <ul class="service__list">
-              <li>Docker / docker-compose</li>
-              <li>Git + CI на GitHub Actions</li>
-              <li>Инструкция по запуску</li>
-            </ul>
-            <p class="service__price">от <strong>499 ₽</strong></p>
-          </article>
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">01 / КАТАЛОГ</p><h2 class="section__title">Услуги <span class="accent">разработки</span></h2>
+          <p class="section__lead">Выберите направление или найдите конкретную услугу. Все цены указаны «от» и уточняются после обсуждения задачи.</p></div>
+          <div class="service-count"><strong id="serviceCount">0</strong><span>услуг в каталоге</span></div>
         </div>
 
-        <p class="note reveal">
-          Точную цену называю после обсуждения задачи — она зависит от объёма и срока.
-        </p>
+        <div class="catalog-tools reveal">
+          <label class="searchbox"><span aria-hidden="true">⌕</span><input id="serviceSearch" type="search" placeholder="Например: Telegram-бот, API, вёрстка..." aria-label="Поиск услуг"></label>
+          <div class="filters" id="serviceFilters" aria-label="Фильтр категорий">
+            <button class="filter is-active" type="button" data-filter="all">Все услуги</button>
+            <button class="filter" type="button" data-filter="frontend">Frontend</button>
+            <button class="filter" type="button" data-filter="backend">Backend</button>
+            <button class="filter" type="button" data-filter="telegram">Telegram</button>
+            <button class="filter" type="button" data-filter="python">Python</button>
+            <button class="filter" type="button" data-filter="systems">C++ / Rust</button>
+            <button class="filter" type="button" data-filter="other">Другое</button>
+          </div>
+        </div>
+
+        <div class="services" id="servicesGrid">
+          <article class="service reveal" data-category="frontend" data-search="верстка сайт макет html css frontend">
+            <div class="service__top"><span class="service__icon">🎨</span><span class="service__tag">Frontend</span></div>
+            <h3>Вёрстка сайта по макету</h3><p>Перенесу дизайн из Figma или изображения в адаптивную веб-страницу.</p>
+            <ul><li>HTML5 и CSS3</li><li>Адаптация под мобильные</li><li>Аккуратная структура</li></ul>
+            <div class="service__bottom"><strong>от 149 ₽</strong><button class="text-btn order-service" data-service="Вёрстка сайта по макету — от 149 ₽">Заказать <span>→</span></button></div>
+          </article>
+          <article class="service reveal" data-category="frontend" data-search="landing page лендинг одностраничный сайт">
+            <div class="service__top"><span class="service__icon">🧩</span><span class="service__tag">Frontend</span></div>
+            <h3>Landing Page</h3><p>Одностраничный сайт для услуги, продукта, мероприятия или личного бренда.</p>
+            <ul><li>Блоки и навигация</li><li>Адаптивный интерфейс</li><li>Формы обратной связи</li></ul>
+            <div class="service__bottom"><strong>от 499 ₽</strong><button class="text-btn order-service" data-service="Landing Page — от 499 ₽">Заказать <span>→</span></button></div>
+          </article>
+          <article class="service reveal" data-category="frontend" data-search="многостраничный сайт frontend html css javascript">
+            <div class="service__top"><span class="service__icon">🌐</span><span class="service__tag">Frontend</span></div>
+            <h3>Многостраничный сайт</h3><p>Сайт компании, портфолио, каталог или небольшой информационный ресурс.</p>
+            <ul><li>Несколько страниц</li><li>Единый дизайн</li><li>Навигация и адаптивность</li></ul>
+            <div class="service__bottom"><strong>от 799 ₽</strong><button class="text-btn order-service" data-service="Многостраничный сайт — от 799 ₽">Заказать <span>→</span></button></div>
+          </article>
+          <article class="service reveal" data-category="frontend" data-search="исправление верстки css javascript адаптив">
+            <div class="service__top"><span class="service__icon">🛠️</span><span class="service__tag">Frontend</span></div>
+            <h3>Исправление сайта</h3><p>Найду и исправлю проблемы в HTML, CSS и JavaScript, улучшу отображение.</p>
+            <ul><li>Ошибки вёрстки</li><li>Адаптивность</li><li>Небольшие доработки</li></ul>
+            <div class="service__bottom"><strong>от 149 ₽</strong><button class="text-btn order-service" data-service="Исправление сайта — от 149 ₽">Заказать <span>→</span></button></div>
+          </article>
+          <article class="service reveal" data-category="backend" data-search="rest api fastapi python backend сервер">
+            <div class="service__top"><span class="service__icon">🔌</span><span class="service__tag">Backend</span></div>
+            <h3>REST API на FastAPI</h3><p>Создам API для сайта, приложения или внутреннего инструмента.</p>
+            <ul><li>Эндпоинты и валидация</li><li>SQLite / PostgreSQL</li><li>Документация и тесты</li></ul>
+            <div class="service__bottom"><strong>от 299 ₽</strong><button class="text-btn order-service" data-service="REST API на FastAPI — от 299 ₽">Заказать <span>→</span></button></div>
+          </article>
+          <article class="service reveal" data-category="backend" data-search="база данных sql sqlite postgresql подключение">
+            <div class="service__top"><span class="service__icon">🗄️</span><span class="service__tag">Backend</span></div>
+            <h3>Подключение базы данных</h3><p>Настрою хранение, получение и изменение данных в приложении.</p>
+            <ul><li>SQLite / PostgreSQL</li><li>SQL-запросы</li><li>CRUD-операции</li></ul>
+            <div class="service__bottom"><strong>от 249 ₽</strong><button class="text-btn order-service" data-service="Подключение базы данных — от 249 ₽">Заказать <span>→</span></button></div>
+          </article>
+          <article class="service reveal" data-category="backend" data-search="авторизация регистрация backend пользователи">
+            <div class="service__top"><span class="service__icon">🔐</span><span class="service__tag">Backend</span></div>
+            <h3>Авторизация и регистрация</h3><p>Добавлю регистрацию, вход и базовое управление пользовательскими сессиями.</p>
+            <ul><li>Валидация данных</li><li>Хеширование паролей</li><li>Защищённые маршруты</li></ul>
+            <div class="service__bottom"><strong>от 299 ₽</strong><button class="text-btn order-service" data-service="Авторизация и регистрация — от 299 ₽">Заказать <span>→</span></button></div>
+          </article>
+          <article class="service reveal" data-category="telegram" data-search="telegram бот бот телеграм команды меню">
+            <div class="service__top"><span class="service__icon">🤖</span><span class="service__tag">Telegram</span></div>
+            <h3>Telegram-бот</h3><p>Бот с командами, кнопками и понятным сценарием взаимодействия.</p>
+            <ul><li>Команды и меню</li><li>Обработка сообщений</li><li>Настройка и инструкция</li></ul>
+            <div class="service__bottom"><strong>от 199 ₽</strong><button class="text-btn order-service" data-service="Telegram-бот — от 199 ₽">Заказать <span>→</span></button></div>
+          </article>
+          <article class="service reveal" data-category="telegram" data-search="telegram бот база данных заявки заказ">
+            <div class="service__top"><span class="service__icon">📨</span><span class="service__tag">Telegram</span></div>
+            <h3>Бот для приёма заявок</h3><p>Собирает обращения пользователей и отправляет их администратору.</p>
+            <ul><li>Форма внутри Telegram</li><li>Уведомления</li><li>Сохранение заявок</li></ul>
+            <div class="service__bottom"><strong>от 499 ₽</strong><button class="text-btn order-service" data-service="Бот для приёма заявок — от 499 ₽">Заказать <span>→</span></button></div>
+          </article>
+          <article class="service reveal" data-category="telegram" data-search="нейросеть ai ии telegram бот api">
+            <div class="service__top"><span class="service__icon">✨</span><span class="service__tag">Telegram</span></div>
+            <h3>AI-функции в Telegram</h3><p>Подключу API языковой модели к боту для ответов и обработки запросов.</p>
+            <ul><li>Интеграция API</li><li>Контекст диалога</li><li>Обработка ошибок</li></ul>
+            <div class="service__bottom"><strong>от 599 ₽</strong><button class="text-btn order-service" data-service="AI-функции в Telegram — от 599 ₽">Заказать <span>→</span></button></div>
+          </article>
+          <article class="service reveal" data-category="python" data-search="python скрипт автоматизация парсер">
+            <div class="service__top"><span class="service__icon">🐍</span><span class="service__tag">Python</span></div>
+            <h3>Скрипты и автоматизация</h3><p>Автоматизирую повторяющиеся действия и обработку файлов.</p>
+            <ul><li>Работа с файлами</li><li>Requests и API</li><li>Запуск по расписанию</li></ul>
+            <div class="service__bottom"><strong>от 149 ₽</strong><button class="text-btn order-service" data-service="Python-скрипт и автоматизация — от 149 ₽">Заказать <span>→</span></button></div>
+          </article>
+          <article class="service reveal" data-category="python" data-search="парсер сайтов html json csv excel">
+            <div class="service__top"><span class="service__icon">🕷️</span><span class="service__tag">Python</span></div>
+            <h3>Парсинг и сбор данных</h3><p>Соберу доступные данные с сайта или API и подготовлю результат в нужном формате.</p>
+            <ul><li>HTML / JSON / API</li><li>CSV / Excel / JSON</li><li>Обработка результатов</li></ul>
+            <div class="service__bottom"><strong>от 249 ₽</strong><button class="text-btn order-service" data-service="Парсинг и сбор данных — от 249 ₽">Заказать <span>→</span></button></div>
+          </article>
+          <article class="service reveal" data-category="systems" data-search="c++ rust консольная утилита cli программа">
+            <div class="service__top"><span class="service__icon">⚙️</span><span class="service__tag">C++ / Rust</span></div>
+            <h3>Консольные приложения</h3><p>Небольшие CLI-инструменты для обработки данных и автоматизации.</p>
+            <ul><li>C++20/23 или Rust</li><li>Аргументы командной строки</li><li>Инструкция по запуску</li></ul>
+            <div class="service__bottom"><strong>от 199 ₽</strong><button class="text-btn order-service" data-service="Консольное приложение на C++ / Rust — от 199 ₽">Заказать <span>→</span></button></div>
+          </article>
+          <article class="service reveal" data-category="systems" data-search="c++ rust многопоточность потоки синхронизация">
+            <div class="service__top"><span class="service__icon">🧵</span><span class="service__tag">C++ / Rust</span></div>
+            <h3>Многопоточность</h3><p>Реализую параллельную обработку задач и синхронизацию потоков.</p>
+            <ul><li>Потоки и задачи</li><li>Mutex / channels</li><li>Обработка ошибок</li></ul>
+            <div class="service__bottom"><strong>от 399 ₽</strong><button class="text-btn order-service" data-service="Многопоточная программа — от 399 ₽">Заказать <span>→</span></button></div>
+          </article>
+          <article class="service reveal" data-category="other" data-search="docker упаковка деплой github actions ci cd">
+            <div class="service__top"><span class="service__icon">🐳</span><span class="service__tag">Инструменты</span></div>
+            <h3>Docker и запуск проекта</h3><p>Подготовлю конфигурацию, чтобы проект было проще запускать и переносить.</p>
+            <ul><li>Dockerfile</li><li>docker-compose</li><li>Инструкция по запуску</li></ul>
+            <div class="service__bottom"><strong>от 299 ₽</strong><button class="text-btn order-service" data-service="Docker и запуск проекта — от 299 ₽">Заказать <span>→</span></button></div>
+          </article>
+          <article class="service reveal" data-category="other" data-search="git github настройка репозиторий">
+            <div class="service__top"><span class="service__icon">🐙</span><span class="service__tag">Инструменты</span></div>
+            <h3>Настройка Git и GitHub</h3><p>Помогу организовать репозиторий, ветки, коммиты и базовый CI.</p>
+            <ul><li>Структура репозитория</li><li>.gitignore и README</li><li>GitHub Actions</li></ul>
+            <div class="service__bottom"><strong>от 149 ₽</strong><button class="text-btn order-service" data-service="Настройка Git и GitHub — от 149 ₽">Заказать <span>→</span></button></div>
+          </article>
+          <article class="service reveal" data-category="other" data-search="аудит код ревью рефакторинг исправление ошибок">
+            <div class="service__top"><span class="service__icon">🔍</span><span class="service__tag">Качество кода</span></div>
+            <h3>Проверка и улучшение кода</h3><p>Посмотрю структуру проекта, найду очевидные проблемы и предложу улучшения.</p>
+            <ul><li>Поиск ошибок</li><li>Рекомендации</li><li>Небольшой рефакторинг</li></ul>
+            <div class="service__bottom"><strong>от 299 ₽</strong><button class="text-btn order-service" data-service="Проверка и улучшение кода — от 299 ₽">Заказать <span>→</span></button></div>
+          </article>
+        </div>
+        <p class="empty-state" id="emptyState" hidden>Ничего не найдено. Попробуйте изменить запрос или категорию.</p>
+        <p class="note">Стоимость ориентировочная. Итоговая цена зависит от требований, объёма, сроков и состояния исходного проекта.</p>
       </div>
     </section>
 
-    <!-- STUDY -->
-    <section class="section" id="study">
-      <div class="container">
-        <h2 class="section__title reveal"><span class="section__num">02.</span> Помогаю с учёбой</h2>
-        <p class="section__lead reveal">
-          Учусь в IT TOP COLLEGE и помогаю одногруппникам: разбираем лабы, объясняю темы,
-          смотрим вместе, почему не компилируется и куда смотреть в документации.
-          По-дружески и бесплатно — своим. Просто напишите в личку.
-        </p>
-
-        <div class="subjects">
-          <article class="subject reveal">
-            <span class="subject__icon">⚡</span>
-            <h3 class="subject__title">C++</h3>
-            <p class="subject__desc">Указатели, ссылки, ООП, шаблоны, STL и разбор ошибок компиляции на лабах.</p>
-          </article>
-
-          <article class="subject reveal">
-            <span class="subject__icon">🟨</span>
-            <h3 class="subject__title">JavaScript</h3>
-            <p class="subject__desc">DOM, события, fetch, промисы, async/await — с примерами и практикой.</p>
-          </article>
-
-          <article class="subject reveal">
-            <span class="subject__icon">☕</span>
-            <h3 class="subject__title">Java</h3>
-            <p class="subject__desc">Синтаксис, ООП, коллекции, исключения. Помогу с типовыми задачами.</p>
-          </article>
-
-          <article class="subject reveal">
-            <span class="subject__icon">🐍</span>
-            <h3 class="subject__title">Python</h3>
-            <p class="subject__desc">Основы, работа с файлами, requests, разбор задач и структура проекта.</p>
-          </article>
-
-          <article class="subject reveal">
-            <span class="subject__icon">🦀</span>
-            <h3 class="subject__title">Rust</h3>
-            <p class="subject__desc">Владение, borrow checker, cargo. Разбираем, почему не собирается, и как исправить.</p>
-          </article>
-
-          <article class="subject reveal">
-            <span class="subject__icon">🐙</span>
-            <h3 class="subject__title">Git / GitHub</h3>
-            <p class="subject__desc">Коммиты, ветки, merge, PR, разрешение конфликтов. Помогу поднять репозиторий.</p>
-          </article>
-
-          <article class="subject reveal">
-            <span class="subject__icon">🗄️</span>
-            <h3 class="subject__title">SQL</h3>
-            <p class="subject__desc">SELECT, JOIN, GROUP BY, нормализация. Разберём запрос по шагам.</p>
-          </article>
-
-          <article class="subject reveal">
-            <span class="subject__icon">🗣️</span>
-            <h3 class="subject__title">English</h3>
-            <p class="subject__desc">Технический английский: читаем документацию, разбираем тексты ошибок.</p>
-          </article>
+    <section class="section section--soft" id="about">
+      <div class="container split">
+        <div><p class="eyebrow">02 / ОБО МНЕ</p><h2 class="section__title">Разработка без<br><span class="accent">лишней сложности</span></h2></div>
+        <div><p class="section__lead">Я Никита (NikiZip), изучаю разработку программного обеспечения в IT TOP COLLEGE. Работаю с Python, C++ и Rust, развиваю собственные проекты и постоянно расширяю практический опыт.</p>
+          <div class="skill-pills"><span>Python</span><span>FastAPI</span><span>C++</span><span>Rust</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>SQL</span><span>Git</span><span>Docker</span></div>
+          <a class="text-link" href="https://github.com/nikitu0008-collab" target="_blank" rel="noopener noreferrer">Мой GitHub <span>↗</span></a>
         </div>
-
-        <p class="note reveal">
-          Стучитесь в <a href="https://t.me/NikiZ1p" target="_blank" rel="noopener">Telegram</a> — договоримся и разберёмся вместе.
-        </p>
       </div>
     </section>
 
-    <!-- WORK -->
     <section class="section" id="work">
       <div class="container">
-        <h2 class="section__title reveal"><span class="section__num">03.</span> Работы</h2>
-        <p class="section__lead reveal">Несколько проектов, которые можно открыть и потрогать прямо сейчас.</p>
-
+        <p class="eyebrow reveal">03 / ПОРТФОЛИО</p><h2 class="section__title reveal">Некоторые <span class="accent">работы</span></h2>
+        <p class="section__lead reveal">Примеры проектов, над которыми я работал. Откройте репозитории, чтобы посмотреть исходный код.</p>
         <div class="work">
-          <a class="card reveal" href="https://github.com/nikitu0008-collab/prompt-forge" target="_blank" rel="noopener">
-            <div class="card__head"><span class="card__icon">✨</span><span class="card__lang">AI</span></div>
-            <h3 class="card__title">Prompt Forge</h3>
-            <p class="card__desc">Генератор структурированных промптов: из описания задачи собирает роль, контекст, требования, формат ответа и критерии готовности в одно готовое ТЗ для ИИ.</p>
-            <span class="card__link">Открыть →</span>
-          </a>
-
-          <a class="card reveal" href="https://github.com/nikitu0008-collab/Messenger-From-C-Boost-Beast" target="_blank" rel="noopener">
-            <div class="card__head"><span class="card__icon">💬</span><span class="card__lang">C++</span></div>
-            <h3 class="card__title">Messenger на Boost.Beast</h3>
-            <p class="card__desc">Чат-сервер на C++23: WebSocket, отдельный поток на клиента, broadcast под мьютексом, встроенный веб-клиент.</p>
-            <span class="card__link">Открыть →</span>
-          </a>
-
-          <a class="card reveal" href="https://github.com/nikitu0008-collab/students-api" target="_blank" rel="noopener">
-            <div class="card__head"><span class="card__icon">🔌</span><span class="card__lang">Python</span></div>
-            <h3 class="card__title">students-api</h3>
-            <p class="card__desc">REST API на FastAPI и SQLite: фильтры, агрегаты, валидация на Pydantic, 10 pytest-тестов, Docker.</p>
-            <span class="card__link">Открыть →</span>
-          </a>
-
-          <a class="card reveal" href="https://github.com/nikitu0008-collab/log-analyzer" target="_blank" rel="noopener">
-            <div class="card__head"><span class="card__icon">📊</span><span class="card__lang">Rust</span></div>
-            <h3 class="card__title">log-analyzer</h3>
-            <p class="card__desc">CLI для разбора Nginx и JSON-логов: фильтры по уровню, IP и времени, статистика, вывод в таблицу, JSON и CSV.</p>
-            <span class="card__link">Открыть →</span>
-          </a>
+          <a class="project reveal" href="https://github.com/nikitu0008-collab/prompt-forge" target="_blank" rel="noopener noreferrer"><div class="project__top"><span>✨</span><small>PYTHON · AI</small></div><h3>Prompt Forge</h3><p>Инструмент для создания структурированных промптов и технических заданий для ИИ.</p><b>Открыть GitHub ↗</b></a>
+          <a class="project reveal" href="https://github.com/nikitu0008-collab/Messenger-From-C-Boost-Beast" target="_blank" rel="noopener noreferrer"><div class="project__top"><span>💬</span><small>C++ · NETWORK</small></div><h3>Messenger</h3><p>Чат-сервер на C++ и Boost.Beast с WebSocket и обменом сообщениями между клиентами.</p><b>Открыть GitHub ↗</b></a>
+          <a class="project reveal" href="https://github.com/nikitu0008-collab/students-api" target="_blank" rel="noopener noreferrer"><div class="project__top"><span>🔌</span><small>PYTHON · API</small></div><h3>students-api</h3><p>REST API на FastAPI и SQLite с валидацией, тестами и Docker.</p><b>Открыть GitHub ↗</b></a>
+          <a class="project reveal" href="https://github.com/nikitu0008-collab/log-analyzer" target="_blank" rel="noopener noreferrer"><div class="project__top"><span>📊</span><small>RUST · CLI</small></div><h3>log-analyzer</h3><p>Консольный инструмент для анализа логов, фильтрации и экспорта статистики.</p><b>Открыть GitHub ↗</b></a>
         </div>
-
-        <p class="note reveal">
-          Больше проектов и исходников — на <a href="https://github.com/nikitu0008-collab" target="_blank" rel="noopener">GitHub</a>.
-        </p>
       </div>
     </section>
 
-    <!-- PROCESS -->
-    <section class="section" id="process">
-      <div class="container">
-        <h2 class="section__title reveal"><span class="section__num">04.</span> Как работаю</h2>
-
+    <section class="section section--soft" id="process">
+      <div class="container"><p class="eyebrow reveal">04 / ПРОЦЕСС</p><h2 class="section__title reveal">Как проходит <span class="accent">работа</span></h2>
         <ol class="process">
-          <li class="step reveal">
-            <span class="step__num">01</span>
-            <h3 class="step__title">Обсуждение</h3>
-            <p class="step__desc">Разбираемся, что нужно получить в итоге. Задаю вопросы, пока картина не станет ясной.</p>
-          </li>
-          <li class="step reveal">
-            <span class="step__num">02</span>
-            <h3 class="step__title">Оценка</h3>
-            <p class="step__desc">Описываю, что сделаю, за какой срок и сколько это будет стоить. Без сюрпризов в конце.</p>
-          </li>
-          <li class="step reveal">
-            <span class="step__num">03</span>
-            <h3 class="step__title">Работа</h3>
-            <p class="step__desc">Пишу код и держу в курсе по ходу дела. Промежуточный результат можно посмотреть до сдачи.</p>
-          </li>
-          <li class="step reveal">
-            <span class="step__num">04</span>
-            <h3 class="step__title">Сдача</h3>
-            <p class="step__desc">Отдаю проект с инструкцией по запуску. Если что-то не так — правлю и объясняю, где искать.</p>
-          </li>
+          <li class="step reveal"><span>01</span><h3>Заявка</h3><p>Вы описываете задачу и желаемый результат.</p></li>
+          <li class="step reveal"><span>02</span><h3>Оценка</h3><p>Уточняем требования, стоимость и сроки до начала работы.</p></li>
+          <li class="step reveal"><span>03</span><h3>Разработка</h3><p>Выполняю задачу и при необходимости показываю промежуточный результат.</p></li>
+          <li class="step reveal"><span>04</span><h3>Передача</h3><p>Передаю результат и инструкцию. Условия правок согласуем заранее.</p></li>
         </ol>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-      <div class="container container--narrow">
-        <h2 class="section__title reveal"><span class="section__num">05.</span> Контакты</h2>
-        <p class="section__lead reveal">
-          Расскажите о задаче в двух-трёх предложениях — отвечу быстро и скажу, возьмусь ли и на каких условиях.
-        </p>
-
-        <div class="contact__list reveal">
-          <a class="contact__item" href="https://t.me/NikiZ1p" target="_blank" rel="noopener">
-            <span class="contact__key">Telegram</span>
-            <span class="contact__val">@NikiZ1p</span>
-          </a>
-          <a class="contact__item" href="mailto:nikitu0008@gmail.com">
-            <span class="contact__key">Email</span>
-            <span class="contact__val">nikitu0008@gmail.com</span>
-          </a>
-          <a class="contact__item" href="https://github.com/nikitu0008-collab" target="_blank" rel="noopener">
-            <span class="contact__key">GitHub</span>
-            <span class="contact__val">nikitu0008-collab</span>
-          </a>
-          <a class="contact__item" href="https://nikitu0008-collab.github.io/" target="_blank" rel="noopener">
-            <span class="contact__key">Портфолио</span>
-            <span class="contact__val">nikitu0008-collab.github.io</span>
-          </a>
+    <section class="section" id="order">
+      <div class="container order-layout">
+        <div><p class="eyebrow reveal">05 / ЗАКАЗ</p><h2 class="section__title reveal">Расскажите о <span class="accent">задаче</span></h2><p class="section__lead reveal">Заполните форму — сайт подготовит сообщение для Telegram. Перед отправкой вы сможете проверить и отредактировать текст.</p>
+          <div class="order-benefits reveal"><p>✓ Сначала обсуждаем требования</p><p>✓ Согласуем цену и сроки заранее</p><p>✓ Никакой автоматической оплаты</p></div>
         </div>
+        <form class="order-form reveal" id="orderForm">
+          <label>Ваше имя<input name="name" type="text" placeholder="Как к вам обращаться" maxlength="80"></label>
+          <label>Услуга<select name="service" id="orderService" required><option value="">Выберите услугу</option><option>Вёрстка сайта по макету — от 149 ₽</option><option>Landing Page — от 499 ₽</option><option>Многостраничный сайт — от 799 ₽</option><option>REST API на FastAPI — от 299 ₽</option><option>Telegram-бот — от 199 ₽</option><option>Бот для приёма заявок — от 499 ₽</option><option>Python-скрипт и автоматизация — от 149 ₽</option><option>Парсинг и сбор данных — от 249 ₽</option><option>Консольное приложение на C++ / Rust — от 199 ₽</option><option>Другая задача</option></select></label>
+          <label>Бюджет (необязательно)<select name="budget"><option value="Не определён">Пока не определён</option><option>До 500 ₽</option><option>500–1 500 ₽</option><option>1 500–5 000 ₽</option><option>Более 5 000 ₽</option></select></label>
+          <label>Описание задачи<textarea name="details" rows="5" placeholder="Что нужно сделать? Есть ли макет, пример или техническое задание?" maxlength="1500" required></textarea></label>
+          <button class="btn btn--primary btn--wide" type="submit">Подготовить заявку в Telegram <span>→</span></button>
+          <p class="form-note">Откроется Telegram с подготовленным текстом. Сообщение отправляется только после вашего подтверждения.</p>
+          <p class="form-error" id="formError" role="alert" hidden>Пожалуйста, выберите услугу и опишите задачу.</p>
+        </form>
+      </div>
+    </section>
 
-        <a class="btn btn--primary btn--big reveal" href="https://t.me/NikiZ1p" target="_blank" rel="noopener">
-          Написать в Telegram
-        </a>
+    <section class="section section--soft" id="faq">
+      <div class="container faq-layout"><div><p class="eyebrow reveal">06 / FAQ</p><h2 class="section__title reveal">Частые <span class="accent">вопросы</span></h2></div>
+        <div class="faq-list">
+          <details class="faq-item reveal"><summary>Почему указана цена «от»?</summary><p>Цена зависит от сложности и объёма. Например, простая правка и полноценная разработка сайта — разные по трудозатратам задачи. Итоговую стоимость согласуем до начала работы.</p></details>
+          <details class="faq-item reveal"><summary>Сколько времени занимает выполнение?</summary><p>Срок зависит от требований и текущей загрузки. После обсуждения задачи я назову реалистичный срок.</p></details>
+          <details class="faq-item reveal"><summary>Можно ли заказать услугу, которой нет в каталоге?</summary><p>Да. Выберите «Другая задача» в форме и опишите, что требуется. Я оценю, смогу ли взяться за работу.</p></details>
+          <details class="faq-item reveal"><summary>Как происходит оплата?</summary><p>Способ и этапы оплаты обсуждаются индивидуально до начала работы. Не переводите деньги, пока не согласованы объём, цена и условия.</p></details>
+          <details class="faq-item reveal"><summary>Помогаешь ли с учебными задачами?</summary><p>Могу объяснить тему, разобрать ошибку или помочь разобраться с инструментами. Учебные задачи лучше решать с пониманием, а не просто сдавать чужую работу.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-box reveal"><p class="eyebrow">НА СВЯЗИ</p><h2>Есть идея для проекта?</h2><p>Напишите мне — обсудим задачу и подберём подходящее решение.</p>
+        <div class="hero__cta"><a class="btn btn--primary" href="https://t.me/NikiZ1p" target="_blank" rel="noopener noreferrer">Telegram @NikiZ1p ↗</a><a class="btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=nikitu0008@gmail.com&su=Заказ%20с%20сайта%20NikiZip">Написать на Email</a></div>
+        <div class="contact-links"><a href="https://github.com/nikitu0008-collab" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://nikitu0008-collab.github.io/" target="_blank" rel="noopener noreferrer">Портфолио</a></div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> NikiZip · программист C++ / Rust / Python</p>
-      <p class="footer__copy">HTML / CSS / JS без фреймворков</p>
-    </div>
-
-    <!-- ПАСХАЛКА -->
-    <div class="container footer__secret-wrap">
-      <button class="secret-btn" id="secretBtn" type="button" aria-expanded="false" aria-controls="secretPanel">
-        🤫 здесь спрятан секрет
-      </button>
-      <div class="secret" id="secretPanel" hidden>
-        <p class="secret__title">🥚 Пасхалка найдена!</p>
-        <p class="secret__text">
-          За секретным — в личку:
-          <a href="https://t.me/NikiZ1p" target="_blank" rel="noopener">@NikiZ1p</a>.
-          Только никому 🤫
-        </p>
-      </div>
-    </div>
+  <footer class="footer"><div class="container footer__inner"><p>© <span id="year"></span> NikiZip.dev · Разработка и IT-услуги</p><p>HTML · CSS · JavaScript</p></div>
+    <div class="container footer__secret-wrap"><button class="secret-btn" id="secretBtn" type="button" aria-expanded="false" aria-controls="secretPanel">🤫 здесь спрятан секрет</button><div class="secret" id="secretPanel" hidden><strong>🥚 Пасхалка найдена!</strong><p>За секретным — в личку: <a href="https://t.me/NikiZ1p" target="_blank" rel="noopener noreferrer">@NikiZ1p</a>. Только никому 🤫</p></div></div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
